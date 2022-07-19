@@ -1,0 +1,26 @@
+.social ul {
+  @include flex;
+  flex-wrap: wrap;
+  width: 104px;
+  @include reset-list;
+  margin-left: 210px;
+
+  @media(max-width: $vp-768) {
+    width: 87px;
+    margin-left: 40px;
+  }
+
+  @media(max-width: $vp-320) {
+    margin-left: 0;
+  }
+}
+
+.social a {
+  @include flex;
+}
+
+.social svg {
+  @media (max-width: $vp-768) {
+    transform: scale(0.8);
+  }
+}

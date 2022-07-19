@@ -1,0 +1,20 @@
+.btn {
+  display: inline-flex;
+  padding: 15px 61px;
+  color: $color-default-black;
+  background-color: $color-default-white;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
