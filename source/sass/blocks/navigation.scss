@@ -1,8 +1,8 @@
 .navigation {
-  width: 642px;
+  width: 612px;
 
   @media (max-width: $vp-768) {
-    width: 560px;
+    width: 525px;
   }
 
   @media (max-width: $vp-320) {
@@ -12,8 +12,10 @@
 }
 
 .navigation ul {
+  position: relative;
+  z-index: 2;
   @include flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
   @include reset-list;
 

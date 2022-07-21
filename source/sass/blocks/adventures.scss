@@ -1,0 +1,141 @@
+.adventures {
+  background-color: $color-default-light-blue
+}
+
+.adventures__wrapper {
+  padding: 100px 45px;
+
+  @media (max-width: $vp-768) {
+    padding: 100px 45px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding: 65px 15px;
+  }
+}
+
+.adventures h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.adventures ul {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 40px;
+  @include reset-list;
+
+  @media (max-width: $vp-768) {
+    gap: 30px;
+  }
+
+  @media (max-width: $vp-700) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.adventures__item {
+  box-sizing: border-box;
+  max-width: 360px;
+  background-color: $color-default-white;
+  @include background;
+
+  @media (max-width: $vp-768) {
+    max-width: 206px
+  }
+
+  @media (max-width: $vp-700) {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.adventures__item--ship {
+  padding: 87px 42px 50px 30px;
+  background-image: url("/img/svg/ship.svg");
+  background-size: 27px 32px;
+  background-position: top 30px left 30px;
+
+  @media (max-width: $vp-768) {
+    padding: 76px 14px 50px 20px;
+    background-size: 21px 26px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding: 76px 15px 25px 20px;
+  }
+}
+
+.adventures__item--meal {
+  padding: 87px 50px 50px 30px;
+  background-image: url("/img/svg/ticks.svg");
+  background-size: 38px 21px;
+  background-position: top 30px left 30px;
+
+  @media (max-width: $vp-768) {
+    padding: 76px 20px 45px 20px;
+    background-size: 33px 19px;
+  }
+
+  @media (max-width: $vp-320) {
+    padding: 76px 47px 25px 20px;
+  }
+}
+
+.adventures__item--boat {
+  padding: 76px 44px 50px 20px;
+  background-image: url("/img/svg/boat.svg");
+  background-size: 45px 15px;
+  background-position: top 30px left 30px;
+
+  @media (max-width: $vp-768) {
+    padding: 76px 16px 45px 20px;
+    background-size: 38px 13px;
+
+    @media (max-width: $vp-320) {
+      padding: 76px 37px 25px 20px;
+    }
+  }
+}
+
+.adventures h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+
+  @media (max-width: $vp-992) {
+    font-size: 16px;
+  }
+}
+
+.adventures p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.adventures__item--boat p {
+  max-width: 241px;
+
+  @media (max-width: $vp-700) {
+    max-width: 100%;
+  }
+}
+
+.adventures br {
+  @media (max-width: $vp-1366) {
+    display: none;
+  }
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+  @media (max-width: $vp-320) {
+    display: block;
+  }
+}

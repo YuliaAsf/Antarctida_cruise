@@ -1,0 +1,10 @@
+.background-wrapper {
+  width: 100%;
+  min-height: 650px;
+  background-color: $color-dark-blue;
+  background-image: url("/img/pictures/intro-background-desktop.jpg");
+  @include background;
+  background-size: cover;
+  box-shadow: 0 4px 4px $color-black-muted;
+  content: "";
+}
