@@ -563,6 +563,20 @@ video {
   pointer-events: none;
 }
 
+.page-header {
+  width: 100%;
+  min-height: 650px;
+  background-color: #011c40;
+  background-image: url("/img/pictures/intro-background-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  content: "";
+}
+
 .page-header__wrapper {
   min-height: 60px;
   padding-top: 30px;
@@ -600,20 +614,6 @@ video {
   z-index: 3;
   top: 0;
   right: 15px;
-}
-
-.background-wrapper {
-  width: 100%;
-  min-height: 650px;
-  background-color: #011c40;
-  background-image: url("/img/pictures/intro-background-desktop.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  content: "";
 }
 
 .navigation {
@@ -727,15 +727,19 @@ video {
   overflow: hidden;
 }
 
-.adventures {
+.advantages {
   background-color: #e3ecf6;
+  background-image: url("/img/pictures/advantages-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.adventures__wrapper {
+.advantages__wrapper {
   padding: 100px 45px;
 }
 
-.adventures h2 {
+.advantages h2 {
   margin: 0;
   margin-bottom: 60px;
   font-size: 28px;
@@ -744,7 +748,7 @@ video {
   text-align: center;
 }
 
-.adventures ul {
+.advantages ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 30% 30%;
@@ -755,38 +759,38 @@ video {
   list-style-type: none;
 }
 
-.adventures__item {
+.advantages__item {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 360px;
   background-color: #f9fbfd;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.adventures__item--ship {
+.advantages__item--ship {
   padding: 87px 42px 50px 30px;
   background-image: url("/img/svg/ship.svg");
   background-size: 27px 32px;
   background-position: top 30px left 30px;
 }
 
-.adventures__item--meal {
+.advantages__item--meal {
   padding: 87px 50px 50px 30px;
   background-image: url("/img/svg/ticks.svg");
   background-size: 38px 21px;
   background-position: top 30px left 30px;
 }
 
-.adventures__item--boat {
+.advantages__item--boat {
   padding: 76px 44px 50px 20px;
   background-image: url("/img/svg/boat.svg");
   background-size: 45px 15px;
   background-position: top 30px left 30px;
 }
 
-.adventures h3 {
+.advantages h3 {
   margin: 0;
   margin-bottom: 20px;
   font-size: 18px;
@@ -794,14 +798,96 @@ video {
   font-weight: 500;
 }
 
-.adventures p {
+.advantages p {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
 }
 
-.adventures__item--boat p {
+.advantages__item--boat p {
   max-width: 241px;
+}
+
+.form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 303px;
+  padding: 50px;
+  background-color: #011c40;
+}
+
+.form p,
+.form label {
+  color: #f9fbfd;
+}
+
+.form p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.form__block {
+  margin-bottom: 20px;
+}
+
+.form input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+}
+
+.form input[type="checkbox"] + span {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  margin-bottom: 30px;
+  font-size: 10px;
+}
+
+.form input[type="checkbox"] + span::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #f9fbfd;
+  content: "";
+}
+
+.form input[type="checkbox"]:checked + span::before {
+  background-image: url("/img/svg/checkbox-tick.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10px 6px;
+}
+
+.form button {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
 }
 
 .page-footer {
@@ -833,9 +919,9 @@ video {
 }
 
 .page-footer__navigation ul {
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -875,6 +961,46 @@ video {
   align-items: center;
 }
 
+.reservation {
+  background-image: url("/img/pictures/form-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #e3ecf6;
+}
+
+.reservation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 163px;
+}
+
+.reservation h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.reservation__content-wrapper {
+  margin-right: 10px;
+}
+
+.reservation__content-wrapper p {
+  width: 352px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -890,12 +1016,17 @@ video {
 }
 
 @media (max-width: 1366px) {
-  .adventures br {
+  .advantages br {
     display: none;
   }
 }
 
 @media (max-width: 992px) {
+  .navigation a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
   .intro__wrapper {
     padding-top: 100px;
   }
@@ -921,8 +1052,33 @@ video {
     height: 264px;
   }
 
-  .adventures h3 {
+  .advantages h3 {
     font-size: 16px;
+  }
+
+  .social ul {
+    margin-left: 40px;
+  }
+
+  .reservation__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 100px 183px;
+  }
+
+  .reservation h2 {
+    margin-bottom: 25px;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+  }
+
+  .reservation__content-wrapper p {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
   }
 }
 
@@ -946,11 +1102,6 @@ video {
 
   .navigation li {
     margin-right: 3px;
-  }
-
-  .navigation a {
-    font-size: 14px;
-    line-height: 17px;
   }
 
   .intro__wrapper {
@@ -994,34 +1145,34 @@ video {
     clip: rect(50px, auto, 150px, auto);
   }
 
-  .adventures__wrapper {
+  .advantages__wrapper {
     padding: 100px 45px;
   }
 
-  .adventures ul {
+  .advantages ul {
     gap: 30px;
   }
 
-  .adventures__item {
+  .advantages__item {
     max-width: 206px;
   }
 
-  .adventures__item--ship {
+  .advantages__item--ship {
     padding: 76px 14px 50px 20px;
     background-size: 21px 26px;
   }
 
-  .adventures__item--meal {
+  .advantages__item--meal {
     padding: 76px 20px 45px 20px;
     background-size: 33px 19px;
   }
 
-  .adventures__item--boat {
+  .advantages__item--boat {
     padding: 76px 16px 45px 20px;
     background-size: 38px 13px;
   }
 
-  .adventures br {
+  .advantages br {
     display: none;
   }
 
@@ -1042,7 +1193,6 @@ video {
 
   .social ul {
     width: 87px;
-    margin-left: 40px;
   }
 
   .social svg {
@@ -1053,7 +1203,7 @@ video {
 }
 
 @media (max-width: 768px) and (max-width: 320px) {
-  .adventures__item--boat {
+  .advantages__item--boat {
     padding: 76px 37px 25px 20px;
   }
 }
@@ -1091,32 +1241,100 @@ video {
     align-self: center;
   }
 
-  .adventures ul {
+  .advantages ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
-  .adventures__item {
+  .advantages__item {
     max-width: 100%;
     margin: 0 auto;
   }
 
-  .adventures__item--boat p {
+  .advantages__item--boat p {
     max-width: 100%;
   }
 }
 
 @media (max-width: 576px) {
+  .page-header__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .navigation ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
+
   .intro h1 {
     font-size: 30px;
     line-height: 45px;
   }
-}
 
-@media (max-width: 450px) {
+  .form__wrapper {
+    width: 230px;
+    padding: 40px 30px;
+  }
+
+  .form p {
+    text-align: center;
+  }
+
+  .form input {
+    padding: 11px 16px;
+  }
+
+  .form input[type="checkbox"] + span {
+    line-height: 12px;
+  }
+
+  .form button {
+    padding: 16px 53px;
+  }
+
   .page-footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .page-footer__navigation {
+    width: 220px;
+    margin: 0;
+  }
+
+  .social ul {
+    margin-left: 0;
+  }
+
+  .reservation__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 65px 15px;
+  }
+
+  .reservation h2 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .reservation__content-wrapper p {
+    width: 257px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -1130,6 +1348,9 @@ video {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .page-header svg {
@@ -1152,7 +1373,7 @@ video {
     display: block;
     background-color: transparent;
     background-image: url("/img/svg/burger-button.svg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -1164,7 +1385,7 @@ video {
     top: 20px;
     right: 20px;
     background-image: url("/img/svg/close-button.svg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -1254,27 +1475,23 @@ video {
     height: 186px;
   }
 
-  .adventures__wrapper {
+  .advantages__wrapper {
     padding: 65px 15px;
   }
 
-  .adventures__item--ship {
+  .advantages__item--ship {
     padding: 76px 15px 25px 20px;
   }
 
-  .adventures__item--meal {
+  .advantages__item--meal {
     padding: 76px 47px 25px 20px;
   }
 
-  .adventures br {
+  .advantages br {
     display: block;
   }
 
   .page-footer__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -1283,10 +1500,6 @@ video {
     align-items: flex-start;
     min-height: 102px;
     padding: 40px 15px;
-  }
-
-  .page-footer img {
-    margin-bottom: 20px;
   }
 
   .page-footer__navigation {
@@ -1309,9 +1522,5 @@ video {
     font-size: 12px;
     line-height: 15px;
     color: #f9fbfd;
-  }
-
-  .social ul {
-    margin-left: 0;
   }
 }

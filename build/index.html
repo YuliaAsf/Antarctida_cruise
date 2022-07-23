@@ -7,45 +7,43 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class = "background-wrapper">
-      <header class = "page-header">
-        <div class="page-header__wrapper container page-header__menu-closed page-header__menu-nojs">
-          <a href = "#">
-            <svg width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
-              </svg>
-          </a>
-          <button class = "btn">
-            <span class = "visually-hidden">Кнопка открытия меню</span>
-          </button>
-          <nav class = "navigation">
-            <ul>
-              <li>
-                <a href = "#">Преимущества</a>
-              </li>
-              <li>
-                <a href = "#">Направления</a>
-              </li>
-              <li>
-                <a href = "#">Ближайшие круизы</a>
-              </li>
-              <li>
-                <a href = "#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main class = "page-main">
-        <section class="intro">
-          <div class="intro__wrapper container">
-            <h1>Круизы в&nbsp;Антарктику</h1>
-            <p>Волшебный мир айсбергов и пингвинов</p>
-          </div>
+    <header class = "page-header">
+      <div class="page-header__wrapper container page-header__menu-closed page-header__menu-nojs">
+        <a href = "#">
+          <svg width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.903517 31.125L14.6726 12.5429L18.4395 14.556L27.4026 0L32.9879 6.65881L35.0665 4.95532L43.1199 15.1755L48.8355 8.36191L64.8126 31.125L49.42 11.7689L47.0817 19.8984L49.225 26.3249L35.456 7.35558L35.3069 13.8279L43.1199 31.125L28.5064 4.33574L32.7282 18.8145L26.8181 4.72292L23.5706 14.0916L24.2198 7.97472L16.1013 30.0411L17.0753 20.75L13.6981 17.0338L0.903517 31.125Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M69.4414 34.0314C47.641 16.428 13.7091 40.6289 0 31.2961C15.0723 44.5215 50.3019 22.1644 69.4414 34.0314Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.4157C52.8956 24.5171 27.4568 39.6838 14.4189 36.1717C28.5467 43.0283 54.8482 27.8361 70 35.4157Z"/>
+            </svg>
+        </a>
+        <button class = "btn">
+          <span class = "visually-hidden">Кнопка открытия меню</span>
+        </button>
+        <nav class = "navigation">
+          <ul>
+            <li>
+              <a href = "#">Преимущества</a>
+            </li>
+            <li>
+              <a href = "#">Направления</a>
+            </li>
+            <li>
+              <a href = "#">Ближайшие круизы</a>
+            </li>
+            <li>
+              <a href = "#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="intro">
+        <div class="intro__wrapper container">
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
       </section>
+    </header>
+    <main class = "page-main">
       <section class = "description">
         <div class = "description__wrapper container">
           <div class = "description__content-wrapper">
@@ -57,23 +55,55 @@
           </div>
         </div>
       </section>
-      <section class = "adventures">
-        <div class = "adventures__wrapper container">
+      <section class = "advantages">
+        <div class = "advantages__wrapper container">
           <h2>Преимущества</h2>
           <ul>
-            <li class = "adventures__item adventures__item--ship">
+            <li class = "advantages__item advantages__item--ship">
               <h3>Небольшой круизный лайнер</h3>
               <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
             </li>
-            <li class = "adventures__item adventures__item--meal">
+            <li class = "advantages__item advantages__item--meal">
               <h3>Система все включено</h3>
               <p>Все наши круизы работают по&nbsp;cистеме “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
             </li>
-            <li class = "adventures__item adventures__item--boat">
+            <li class = "advantages__item advantages__item--boat">
               <h3>Экскурсионные туры на Zodiac</h3>
               <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках<br> типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class = "reservation">
+        <div class = "reservation__wrapper">
+          <div class = reservation__content-wrapper>
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+          </div>
+          <form class = "form" action = "" method = "post">
+            <div class = "form__wrapper">
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
+              <div class = "form__block">
+                <label class = "visually-hidden" for = "name">Ваше имя:</label>
+                <input type = "text" name = "name" id = "name" placeholder = "Имя">
+              </div>
+              <div class = "form__block">
+                <label class = "visually-hidden" for = "phone">Ваше телефон:</label>
+                <input type = "tel" name = "phone" id = "phone" pattern="[0-9]{10}" placeholder = "Телефон">
+              </div>
+              <div class = "form__block">
+                <label class = "visually-hidden" for = "email">Ваше Email:</label>
+                <input type = "email" name = "email" id = "email" placeholder = "Email">
+              </div>
+              <label>
+                <input class = "visually-hidden" type = "checkbox" name = "agree" value = "agree" checked>
+                <span>Я согласен на обработку моих персональных данных</span>
+              </label>
+              <button class = "btn" type = "submit">
+                <span>Оставить заявку</span>
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>

@@ -5,12 +5,15 @@
   @include reset-list;
   margin-left: 210px;
 
-  @media(max-width: $vp-768) {
-    width: 87px;
+  @media (max-width: $vp-992) {
     margin-left: 40px;
   }
 
-  @media(max-width: $vp-320) {
+  @media(max-width: $vp-768) {
+    width: 87px;
+  }
+
+  @media(max-width: $vp-576) {
     margin-left: 0;
   }
 }

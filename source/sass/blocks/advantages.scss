@@ -1,8 +1,10 @@
-.adventures {
-  background-color: $color-default-light-blue
+.advantages {
+  background-color: $color-light-blue;
+  background-image: url("/img/pictures/advantages-background.png");
+  @include background;
 }
 
-.adventures__wrapper {
+.advantages__wrapper {
   padding: 100px 45px;
 
   @media (max-width: $vp-768) {
@@ -14,7 +16,7 @@
   }
 }
 
-.adventures h2 {
+.advantages h2 {
   margin: 0;
   margin-bottom: 60px;
   font-size: 28px;
@@ -23,7 +25,7 @@
   text-align: center;
 }
 
-.adventures ul {
+.advantages ul {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   gap: 40px;
@@ -38,7 +40,7 @@
   }
 }
 
-.adventures__item {
+.advantages__item {
   box-sizing: border-box;
   max-width: 360px;
   background-color: $color-default-white;
@@ -54,7 +56,7 @@
   }
 }
 
-.adventures__item--ship {
+.advantages__item--ship {
   padding: 87px 42px 50px 30px;
   background-image: url("/img/svg/ship.svg");
   background-size: 27px 32px;
@@ -70,7 +72,7 @@
   }
 }
 
-.adventures__item--meal {
+.advantages__item--meal {
   padding: 87px 50px 50px 30px;
   background-image: url("/img/svg/ticks.svg");
   background-size: 38px 21px;
@@ -86,7 +88,7 @@
   }
 }
 
-.adventures__item--boat {
+.advantages__item--boat {
   padding: 76px 44px 50px 20px;
   background-image: url("/img/svg/boat.svg");
   background-size: 45px 15px;
@@ -102,7 +104,7 @@
   }
 }
 
-.adventures h3 {
+.advantages h3 {
   margin: 0;
   margin-bottom: 20px;
   font-size: 18px;
@@ -114,13 +116,13 @@
   }
 }
 
-.adventures p {
+.advantages p {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
 }
 
-.adventures__item--boat p {
+.advantages__item--boat p {
   max-width: 241px;
 
   @media (max-width: $vp-700) {
@@ -128,7 +130,7 @@
   }
 }
 
-.adventures br {
+.advantages br {
   @media (max-width: $vp-1366) {
     display: none;
   }
