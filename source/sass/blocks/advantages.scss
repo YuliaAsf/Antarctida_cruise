@@ -1,118 +1,152 @@
 .advantages {
   background-color: $color-light-blue;
   background-image: url("/img/pictures/advantages-background.png");
+
   @include background;
-}
 
-.advantages__wrapper {
-  padding: 100px 45px;
-
-  @media (max-width: $vp-768) {
-    padding: 100px 45px;
-  }
-
-  @media (max-width: $vp-320) {
-    padding: 65px 15px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/pictures/advantages-background@2x.png");
   }
 }
 
 .advantages h2 {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   font-size: 28px;
-  line-height: 42px;
   font-weight: 600;
   text-align: center;
+
+  @media (max-width: $vp-768) {
+    font-size: 26px;
+    margin-bottom: 56px;
+  }
+
+  @media (max-width: $vp-320) {
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
 }
 
 .advantages ul {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 31% 31% 31%;
   gap: 40px;
+
   @include reset-list;
 
   @media (max-width: $vp-768) {
-    gap: 30px;
+    gap: 25px;
   }
 
   @media (max-width: $vp-700) {
     grid-template-columns: 1fr;
   }
+
+  @media (max-width: $vp-320) {
+    gap: 32px;
+  }
 }
 
 .advantages__item {
+  padding: 80px 30px 25px 30px;
+
   box-sizing: border-box;
   max-width: 360px;
   background-color: $color-default-white;
+
   @include background;
 
   @media (max-width: $vp-768) {
-    max-width: 206px
+    padding: 70px 16px 20px 20px;
+    max-width: 206px;
   }
 
   @media (max-width: $vp-700) {
     max-width: 100%;
     margin: 0 auto;
   }
+
+  @media (max-width: $vp-320) {
+    padding: 70px 16px 20px 20px;
+  }
 }
 
 .advantages__item--ship {
-  padding: 87px 42px 50px 30px;
   background-image: url("/img/svg/ship.svg");
   background-size: 27px 32px;
   background-position: top 30px left 30px;
 
   @media (max-width: $vp-768) {
-    padding: 76px 14px 50px 20px;
     background-size: 21px 26px;
-  }
-
-  @media (max-width: $vp-320) {
-    padding: 76px 15px 25px 20px;
+    background-position: top 25px left 20px;
   }
 }
 
 .advantages__item--meal {
-  padding: 87px 50px 50px 30px;
+  padding-right: 50px;
   background-image: url("/img/svg/ticks.svg");
   background-size: 38px 21px;
-  background-position: top 30px left 30px;
+  background-position: top 33px left 32px;
 
   @media (max-width: $vp-768) {
-    padding: 76px 20px 45px 20px;
+    padding-right: 10px;
     background-size: 33px 19px;
+    background-position: top 30px left 20px;
   }
 
   @media (max-width: $vp-320) {
-    padding: 76px 47px 25px 20px;
+    padding-right: 48px;
   }
 }
 
 .advantages__item--boat {
-  padding: 76px 44px 50px 20px;
   background-image: url("/img/svg/boat.svg");
   background-size: 45px 15px;
-  background-position: top 30px left 30px;
+  background-position: top 34px left 30px;
 
   @media (max-width: $vp-768) {
-    padding: 76px 16px 45px 20px;
+    padding-right: 17px;
     background-size: 38px 13px;
+    background-position: top 32px left 20px;
+  }
 
-    @media (max-width: $vp-320) {
-      padding: 76px 37px 25px 20px;
-    }
+  @media (max-width: $vp-320) {
+    padding-top: 72px;
   }
 }
 
 .advantages h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 
   @media (max-width: $vp-992) {
+    margin-bottom: 10px;
     font-size: 16px;
+  }
+
+  @media (max-width: $vp-768) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (max-width: $vp-320) {
+    margin-bottom: 8px;
+  }
+}
+
+.advantages__item--meal h3 {
+  @media (max-width: $vp-320) {
+    width: 133px;
+  }
+}
+
+.advantages__item--boat h3 {
+  @media (max-width: $vp-320) {
+    width: 151px;
+    margin-top: -3px;
   }
 }
 
@@ -130,13 +164,11 @@
   }
 }
 
-.advantages br {
+.advantages__item--boat br {
   @media (max-width: $vp-1366) {
     display: none;
   }
-  @media (max-width: $vp-768) {
-    display: none;
-  }
+
   @media (max-width: $vp-320) {
     display: block;
   }

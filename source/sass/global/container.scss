@@ -2,15 +2,15 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 100%;
-  max-width: 1366px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 120px 103px;
 
-  @include vp-768 {
-    padding: 0 45px;
+  @media (max-width: $vp-768) {
+    padding: 100px 45px;
+    padding-top: 100px;
   }
 
-  @include vp-320 {
-    padding: 0 15px;
+  @media (max-width: $vp-320) {
+    padding: 65px 15px;
   }
 }

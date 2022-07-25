@@ -1,8 +1,9 @@
 .navigation {
-  width: 612px;
+  width: 613px;
+  margin-right: -10px;
 
   @media (max-width: $vp-768) {
-    width: 525px;
+    width: 523px;
   }
 
   @media (max-width: $vp-320) {
@@ -14,16 +15,18 @@
 .navigation ul {
   position: relative;
   z-index: 2;
+
   @include flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+
   @include reset-list;
 
   @media (max-width: $vp-576) {
     justify-content: center;
   }
 
-  @media (max-width: $vp-320){
+  @media (max-width: $vp-320) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -40,6 +43,7 @@
 
   @media (max-width: $vp-768) {
     margin-right: 3px;
+    margin-bottom: 15px;
   }
 
   @media (max-width: $vp-320) {
@@ -49,7 +53,7 @@
 }
 
 .navigation li:last-of-type {
-  margin-right: 0;
+  margin-right: -10px;
 }
 
 .navigation a {
@@ -72,5 +76,5 @@
     font-size: 18px;
     line-height: 22px;
     color: $color-default-black;
-    }
+  }
 }

@@ -1,25 +1,39 @@
 .social ul {
   @include flex;
   flex-wrap: wrap;
-  width: 104px;
+  width: 110px;
+
   @include reset-list;
-  margin-left: 210px;
 
   @media (max-width: $vp-992) {
     margin-left: 40px;
   }
 
-  @media(max-width: $vp-768) {
-    width: 87px;
+  @media (max-width: $vp-768) {
+    width: 93px;
   }
 
-  @media(max-width: $vp-576) {
+  @media (max-width: $vp-576) {
     margin-left: 0;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 88px;
   }
 }
 
 .social a {
   @include flex;
+  margin-left: 5px;
+  margin-bottom: 10px;
+
+  @media (max-width: $vp-320) {
+    margin-left: 0;
+  }
+}
+
+.social a:nth-child(3n) {
+  margin-left: 0;
 }
 
 .social svg {
