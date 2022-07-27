@@ -718,7 +718,7 @@ video {
   margin: 0;
 }
 
-.description-image__wrapper {
+.description__image-wrapper {
   width: 560px;
   height: 301px;
   position: relative;
@@ -841,7 +841,7 @@ video {
   line-height: 27px;
 }
 
-.form__wrapper {
+form .reservation-form__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -864,12 +864,12 @@ video {
   background-color: #011c40;
 }
 
-.form p,
-.form label {
+form .reservation-form__information,
+form .reservation-form__checkbox-info {
   color: #f9fbfd;
 }
 
-.form p {
+form .reservation-form__information {
   margin: 0;
   margin-bottom: 28px;
   font-size: 18px;
@@ -877,42 +877,42 @@ video {
   font-weight: 500;
 }
 
-.form__block {
+form .reservation-form__block {
   margin-bottom: 18px;
 }
 
-.form__block:last-of-type {
+form .reservation-form__block:last-of-type {
   margin-bottom: 14px;
 }
 
-.form input {
+form .reservation-form__input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 11px 16px;
 }
 
-.form input::-webkit-input-placeholder {
+form .reservation-form__input::-webkit-input-placeholder {
   font-size: 14px;
 }
 
-.form input::-moz-placeholder {
+form .reservation-form__input::-moz-placeholder {
   font-size: 14px;
 }
 
-.form input:-ms-input-placeholder {
+form .reservation-form__input:-ms-input-placeholder {
   font-size: 14px;
 }
 
-.form input::-ms-input-placeholder {
+form .reservation-form__input::-ms-input-placeholder {
   font-size: 14px;
 }
 
-.form input::placeholder {
+form .reservation-form__input::placeholder {
   font-size: 14px;
 }
 
-.form input[type="checkbox"] + span {
+form .reservation-form__checkbox-info {
   position: relative;
   display: block;
   padding-left: 22px;
@@ -920,7 +920,7 @@ video {
   font-size: 10px;
 }
 
-.form input[type="checkbox"] + span::before {
+form .reservation-form__checkbox-info::before {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -933,7 +933,7 @@ video {
   content: "";
 }
 
-.form input[type="checkbox"]:checked + span::before {
+form .reservation-form__input-checkbox:checked + .reservation-form__checkbox-info::before {
   background-image: url("/img/svg/checkbox-tick.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -941,7 +941,7 @@ video {
   background-size: 10px 6px;
 }
 
-.form button {
+form .reservation-form__button {
   display: block;
   padding: 11px;
   font-size: 14px;
@@ -1274,7 +1274,7 @@ video {
     line-height: 20px;
   }
 
-  .description-image__wrapper {
+  .description__image-wrapper {
     width: 324px;
     height: 264px;
   }
@@ -1537,7 +1537,7 @@ video {
     line-height: 34px;
   }
 
-  .description-image__wrapper {
+  .description__image-wrapper {
     width: 300px;
     height: 250px;
     -ms-flex-item-align: center;
@@ -1603,20 +1603,20 @@ video {
     line-height: 22px;
   }
 
-  .form__wrapper {
+  form .reservation-form__wrapper {
     width: 230px;
     padding: 40px 30px;
   }
 
-  .form p {
+  form .reservation-form__information {
     text-align: center;
   }
 
-  .form input[type="checkbox"] + span {
+  form .reservation-form__checkbox-info {
     line-height: 10px;
   }
 
-  .form button {
+  form .reservation-form__button {
     padding: 16px 53px;
   }
 
@@ -1800,7 +1800,7 @@ video {
     margin-bottom: 33px;
   }
 
-  .description-image__wrapper {
+  .description__image-wrapper {
     width: 100%;
     height: 186px;
   }
@@ -1848,13 +1848,13 @@ video {
     padding-bottom: 65px;
   }
 
-  .form__wrapper {
+  form .reservation-form__wrapper {
     width: 230px;
     padding: 33px 30px;
     padding-bottom: 40px;
   }
 
-  .form p {
+  form .reservation-form__information {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -1863,29 +1863,29 @@ video {
     line-height: 26px;
   }
 
-  .form__block {
+  form .reservation-form__block {
     margin-bottom: 20px;
   }
 
-  .form__block:last-of-type {
+  form .reservation-form__block:last-of-type {
     margin-bottom: 20px;
   }
 
-  .form input {
+  form .reservation-form__input {
     padding: 10px 12px;
   }
 
-  .form input[type="checkbox"] + span {
+  form .reservation-form__checkbox-info {
     width: 151px;
     padding-left: 27px;
   }
 
-  .form input[type="checkbox"] + span::before {
+  form .reservation-form__checkbox-info::before {
     width: 20px;
     height: 20px;
   }
 
-  .form button {
+  form .reservation-form__button {
     padding: 11px 53px;
   }
 

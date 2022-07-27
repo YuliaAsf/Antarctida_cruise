@@ -47,9 +47,9 @@
         <div class = "description__wrapper container">
           <div class = "description__content-wrapper">
             <h2> Путешествие на край Земли</h2>
-            <p>  Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+            <p> Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
-          <div class = "description-image__wrapper">
+          <div class = "description__image-wrapper">
             <!-- 1х: 560px; 2x: 1120px -->
             <picture>
               <source type="image/webp" srcset="img/pictures/penguins.webp 1x, img/pictures/penguins@2x.webp 2x">
@@ -283,26 +283,26 @@
             <h2>Раннее бронирование</h2>
             <p>Забронируйте тур за&nbsp;3-6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
           </div>
-          <form class = "form" action = "https://echo.htmlacademy.ru/" method = "post">
-            <div class = "form__wrapper">
-              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
-              <div class = "form__block">
+          <form class = "reservation-form" action = "https://echo.htmlacademy.ru/" method = "post">
+            <div class = "reservation-form__wrapper">
+              <p class = "reservation-form__information">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
+              <div class = "reservation-form__block">
                 <label class = "visually-hidden" for = "name">Ваше имя:</label>
-                <input type = "text" name = "name" id = "name" placeholder = "Имя">
+                <input class = "reservation-form__input" type = "text" name = "name" id = "name" placeholder = "Имя">
               </div>
-              <div class = "form__block">
+              <div class = "reservation-form__block">
                 <label class = "visually-hidden" for = "phone">Ваше телефон:</label>
-                <input type = "tel" name = "phone" id = "phone" pattern="[0-9]{10}" placeholder = "Телефон">
+                <input  class = "reservation-form__input" type = "tel" name = "phone" id = "phone" pattern="[0-9]{10}" placeholder = "Телефон">
               </div>
-              <div class = "form__block">
+              <div class = "reservation-form__block">
                 <label class = "visually-hidden" for = "email">Ваше Email:</label>
-                <input type = "email" name = "email" id = "email" placeholder = "Email">
+                <input class = "reservation-form__input" type = "email" name = "email" id = "email" placeholder = "Email">
               </div>
               <label>
-                <input class = "visually-hidden" type = "checkbox" name = "agree" value = "agree" checked>
-                <span>Я согласен на обработку моих персональных данных</span>
+                <input class = "reservation-form__input-checkbox visually-hidden" type = "checkbox" name = "agree" value = "agree" checked>
+                <span class = "reservation-form__checkbox-info">Я согласен на обработку моих персональных данных</span>
               </label>
-              <button class = "btn" type = "submit">
+              <button  class = "reservation-form__button  btn" type = "submit">
                 <span>Оставить заявку</span>
               </button>
             </div>

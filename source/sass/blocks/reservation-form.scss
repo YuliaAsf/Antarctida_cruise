@@ -1,4 +1,4 @@
-.form__wrapper {
+form .reservation-form__wrapper {
   @include flex;
   flex-direction: column;
   align-items: stretch;
@@ -19,12 +19,12 @@
   }
 }
 
-.form p,
-.form label {
+form .reservation-form__information,
+form .reservation-form__checkbox-info {
   color: $color-default-white;
 }
 
-.form p {
+form .reservation-form__information {
   margin: 0;
   margin-bottom: 28px;
   font-size: 18px;
@@ -43,7 +43,7 @@
   }
 }
 
-.form__block {
+form .reservation-form__block {
   margin-bottom: 18px;
 
   @media (max-width: $vp-320) {
@@ -51,7 +51,7 @@
   }
 }
 
-.form__block:last-of-type {
+form .reservation-form__block:last-of-type {
   margin-bottom: 14px;
 
   @media (max-width: $vp-320) {
@@ -59,7 +59,7 @@
   }
 }
 
-.form input {
+form .reservation-form__input {
   box-sizing: border-box;
   width: 100%;
   padding: 11px 16px;
@@ -69,11 +69,11 @@
   }
 }
 
-.form input::placeholder {
+form .reservation-form__input::placeholder {
   font-size: 14px;
 }
 
-.form input[type="checkbox"] + span {
+form .reservation-form__checkbox-info {
   position: relative;
   display: block;
   padding-left: 22px;
@@ -90,7 +90,7 @@
   }
 }
 
-.form input[type="checkbox"] + span::before {
+form .reservation-form__checkbox-info::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -106,14 +106,14 @@
   }
 }
 
-.form input[type="checkbox"]:checked + span::before {
+form .reservation-form__input-checkbox:checked + .reservation-form__checkbox-info::before {
   background-image: url("/img/svg/checkbox-tick.svg");
 
   @include background;
   background-size: 10px 6px;
 }
 
-.form button {
+form .reservation-form__button {
   display: block;
   padding: 11px;
   font-size: 14px;
