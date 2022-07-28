@@ -121,9 +121,8 @@
   }
 }
 
-.page-header__menu-nojs nav ul {
+.page-header__menu-nojs ul {
   @media (max-width: $vp-320) {
-    max-height: 100px;
     padding: 75px 25px;
     margin-top: -20px;
     margin-left: 0;

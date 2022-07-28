@@ -1691,8 +1691,7 @@ form.reservation-form br {
     margin-bottom: -120px;
   }
 
-  .page-header__menu-nojs nav ul {
-    max-height: 100px;
+  .page-header__menu-nojs ul {
     padding: 75px 25px;
     margin-top: -20px;
     margin-left: 0;
