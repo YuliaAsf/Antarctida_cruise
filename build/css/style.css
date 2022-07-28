@@ -1686,16 +1686,16 @@ form.reservation-form br {
     background-size: 13px 13px;
   }
 
-  .page-header__menu-nojs {
-    position: relative;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .page-header__menu-nojs nav {
     display: block;
+    margin-bottom: -120px;
+  }
+
+  .page-header__menu-nojs nav ul {
+    max-height: 100px;
+    padding: 75px 25px;
+    margin-top: -20px;
+    margin-left: 0;
   }
 
   .page-header__menu-nojs button {
@@ -1728,8 +1728,7 @@ form.reservation-form br {
     -ms-flex-align: start;
     align-items: flex-start;
     min-height: 418px;
-    margin-right: -30px;
-    margin-left: 20px;
+    margin-right: -5px;
     padding: 75px 25px;
     background-color: #f9fbfd;
   }
