@@ -2,17 +2,9 @@
   min-height: 540px;
   padding: 160px 198px;
 
-  @media (max-width: $vp-992) {
-    padding-top: 100px;
-  }
-
   @media (max-width: $vp-768) {
     min-height: 545px;
     padding-top: 175px;
-  }
-
-  @media (max-width: $vp-700) {
-    padding-top: 50px;
   }
 
   @media (max-width: $vp-320) {
@@ -31,33 +23,29 @@
 }
 
 .intro h1 {
-  margin-bottom: 10px;
-  font-size: 54px;
+  margin-bottom: 11px;
+  font-size: calc(2.12vw + 25px);
   line-height: 66px;
   font-weight: 700;
 
   @media (max-width: $vp-768) {
-    font-size: 50px;
+    font-size: calc(5.2vw + 10px);
     line-height: 61px;
   }
 
-  @media (max-width: $vp-576) {
-    font-size: 30px;
-    line-height: 45px;
-  }
-
   @media (max-width: $vp-320) {
+    margin-bottom: 10px;
     font-size: 36px;
     line-height: 45px;
   }
 }
 
 .intro p {
-  font-size: 20px;
+  font-size: calc(1vw + 6.28px);
   line-height: 25px;
 
   @media (max-width: $vp-768) {
-    font-size: 18px;
+    font-size: calc(1.5vw + 6.5px);
     line-height: 22px;
   }
 

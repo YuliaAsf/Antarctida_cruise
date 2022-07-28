@@ -8,93 +8,95 @@
 
   @media (max-width: $vp-700) {
     flex-direction: column;
-    align-items: stretch;
   }
 }
 
 .description__content-wrapper {
-  width: 512px;
-  margin-right: 88px;
-
-  @media (max-width: $vp-992) {
-    width: 350px;
-    margin-right: 20px;
-  }
+  align-self: flex-start;
+  width: 45%;
+  margin-right: 2vw;
 
   @media (max-width: $vp-768) {
-    width: 320px;
+    width: 48%;
     margin-right: 30px;
   }
 
   @media (max-width: $vp-700) {
     width: 100%;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 100%;
+    margin-bottom: 0;
   }
 }
 
 .description h2 {
   margin: 0;
-  margin-bottom: 22px;
-  font-size: 28px;
-  line-height: 42px;
+  margin-bottom: 1.64vw;
+  padding-top: 55px;
+  font-size: calc(1vw + 14.5px);
+  line-height: 3.1vw;
   font-weight: 600;
 
-  @media (max-width: $vp-992) {
-    font-size: 20px;
-    line-height: 36px;
-    margin-bottom: 17px;
-  }
-
   @media (max-width: $vp-768) {
-    width: 205px;
+    width: 64%;
     margin-top: -10px;
-    font-size: 26px;
-    line-height: 36px;
+    margin-bottom: 17px;
+    padding-top: 0;
+    font-size: calc(1.83vw + 12px);
+    line-height: calc(2vh + 24px);
   }
 
-  @media (max-width: $vp-700) {
-    width: 190px;
+  @media (max-width: $vp-320) {
+    width: 70%;
+    margin-bottom: 11px;
     font-size: 24px;
-    line-height: 34px;
   }
 }
 
 .description p {
   margin: 0;
 
-  @media (max-width: $vp-992) {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
   @media (max-width: $vp-768) {
-    font-size: 16px;
+    font-size: calc(1vw + 8.4px);
     line-height: 24px;
   }
 
   @media (max-width: $vp-320) {
     margin-bottom: 33px;
+    font-size: 16px;
   }
 }
 
 .description__image-wrapper {
-  width: 560px;
+  min-width: 48.5%;
+  max-width: 48.5%;
   height: 301px;
   position: relative;
   overflow: hidden;
 
-  @media (max-width: $vp-992) {
-    width: 324px;
+  @media (max-width: $vp-768) {
+    min-width: 47.9%;
+    max-width: 47.9%;
     height: 264px;
   }
 
   @media (max-width: $vp-700) {
-    width: 300px;
-    height: 250px;
-    align-self: center;
+    max-width: 100%;
+    height: auto;
   }
 
   @media (max-width: $vp-320) {
-    width: 100%;
     height: 186px;
+  }
+}
+
+.description img {
+  object-fit: contain;
+
+  @media (max-width: $vp-768) {
+    object-fit: cover;
   }
 }

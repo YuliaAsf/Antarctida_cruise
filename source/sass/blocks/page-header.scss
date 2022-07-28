@@ -23,14 +23,9 @@
   padding: 33px 103px;
 
   @include flex;
-  flex-wrap: wrap;
 
   @media (max-width: $vp-768) {
     padding: 27px 45px;
-  }
-
-  @media (max-width: $vp-576) {
-    justify-content: center;
   }
 
   @media (max-width: $vp-320) {
@@ -41,7 +36,7 @@
 }
 
 .page-header a {
-  @media (min-width: $vp-768) {
+  @media (max-width: $vp-768) {
     align-self: flex-start;
   }
 }

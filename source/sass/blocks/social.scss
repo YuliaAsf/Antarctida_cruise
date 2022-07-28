@@ -1,3 +1,15 @@
+.social {
+  width: 9.6%;
+
+  @media (max-width: $vp-768) {
+    width: 15%;
+  }
+
+  @media (max-width: $vp-320) {
+    width: 100%;
+  }
+}
+
 .social ul {
   @include flex;
   flex-wrap: wrap;
@@ -5,16 +17,8 @@
 
   @include reset-list;
 
-  @media (max-width: $vp-992) {
-    margin-left: 40px;
-  }
-
   @media (max-width: $vp-768) {
-    width: 93px;
-  }
-
-  @media (max-width: $vp-576) {
-    margin-left: 0;
+    width: 100%;
   }
 
   @media (max-width: $vp-320) {

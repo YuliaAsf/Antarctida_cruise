@@ -7,7 +7,7 @@ $color-light-blue:                  #e3ecf6;
 $color-black-muted:                 rgba(0, 0, 0, 0.25);
 
 // Typography
-$fz-default:                        16px;
+$fz-default:                        calc(0.66vw + 7px);
 $lh-default:                        24px;
 $ff-default:                        "Montserrat", "Tahoma", sans-serif;
 

@@ -53,6 +53,7 @@
   transition: none !important;
 }
 
-.no-show {
-  display: none;
+.no-scrolling {
+  height: 100vh;
+  overflow: hidden;
 }

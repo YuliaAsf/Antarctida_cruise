@@ -1,5 +1,5 @@
 .catalog__wrapper {
-  padding: 120px 118px;
+  padding: 120px 8.63vw;
 }
 
 .catalog h2 {
@@ -41,7 +41,6 @@
 
 .catalog li {
   display: flex;
-  width: 260px;
   min-height: 386px;
   overflow: hidden;
 
@@ -110,8 +109,8 @@
   flex-direction: column;
   padding: 28px 25px;
   padding-bottom: 35px;
-  padding-right: 15px;
-  font-size: 14px;
+  padding-right: 14px;
+  font-size: calc(0.43vw + 8px);
   line-height: 20px;
   color: $color-default-white;
   background-color: $color-dark-blue;
@@ -119,16 +118,27 @@
   @media (max-width: $vp-768) {
     padding: 35px;
     padding-top: 28px;
+    font-size: calc(0.8vw + 8px);
   }
 
   @media (max-width: $vp-320) {
+    font-size: 14px;
     padding: 35px 26px;
     padding-top: 28px;
   }
 }
 
 .catalog__block--information h3 {
+  font-size: calc(0.59vw + 10px);
   margin-bottom: 15px;
+
+  @media (max-width: $vp-768) {
+    font-size: calc(1.1vw + 10px);
+  }
+
+  @media (max-width: $vp-320) {
+    font-size: 18px;
+  }
 }
 
 .catalog__block--information b {

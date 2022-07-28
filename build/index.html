@@ -10,7 +10,7 @@
   <body>
     <header class = "page-header">
       <div class="page-header__wrapper container page-header__menu-closed page-header__menu-nojs">
-        <a href = "#">
+        <a>
           <svg width="70" height="38" viewBox="0 0 70 38" role = "img" aria-hidden = "true" focusable = "false">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
@@ -18,13 +18,13 @@
         <button class = "btn">
           <span class = "visually-hidden">Кнопка открытия меню</span>
         </button>
-        <nav class = "navigation">
+        <nav class = "navigation page-header__navigation">
           <ul>
             <li>
               <a href = "#advantages">Преимущества</a>
             </li>
             <li>
-              <a href = "#">Направления</a>
+              <a href = "#description">Направления</a>
             </li>
             <li>
               <a href = "#catalog">Ближайшие круизы</a>
@@ -38,12 +38,12 @@
       <section class="intro">
         <div class="intro__wrapper container">
           <h1>Круизы в&nbsp;Антарктику</h1>
-          <p>Волшебный мир айсбергов и пингвинов</p>
+          <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </section>
     </header>
     <main class = "page-main">
-      <section class = "description">
+      <section class = "description" id = "description">
         <div class = "description__wrapper container">
           <div class = "description__content-wrapper">
             <h2> Путешествие на край Земли</h2>
@@ -63,7 +63,7 @@
           <h2>Преимущества</h2>
           <ul>
             <li class = "advantages__item advantages__item--ship">
-              <h3>Небольшой круизный&nbsp;лайнер</h3>
+              <h3>Небольшой круизный лайнер</h3>
               <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
             </li>
             <li class = "advantages__item advantages__item--meal">
@@ -72,7 +72,7 @@
             </li>
             <li class = "advantages__item advantages__item--boat">
               <h3>Экскурсионные туры на Zodiac</h3>
-              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются<br> на оборудованных лодках<br> типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках<br> типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
             </li>
           </ul>
         </div>
@@ -285,7 +285,7 @@
           </div>
           <form class = "reservation-form" action = "https://echo.htmlacademy.ru/" method = "post">
             <div class = "reservation-form__wrapper">
-              <p class = "reservation-form__information">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в ближайшее время</p>
+              <p class = "reservation-form__information">Оставьте заявку<br> и мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               <div class = "reservation-form__block">
                 <label class = "visually-hidden" for = "name">Ваше имя:</label>
                 <input class = "reservation-form__input" type = "text" name = "name" id = "name" placeholder = "Имя">
@@ -299,10 +299,10 @@
                 <input class = "reservation-form__input" type = "email" name = "email" id = "email" placeholder = "Email">
               </div>
               <label>
-                <input class = "reservation-form__input-checkbox visually-hidden" type = "checkbox" name = "agree" value = "agree" checked>
+                <input class = "reservation-form__input-checkbox visually-hidden" type = "checkbox" name = "agree" value = "agree" checked required>
                 <span class = "reservation-form__checkbox-info">Я согласен на обработку моих персональных данных</span>
               </label>
-              <button  class = "reservation-form__button  btn" type = "submit">
+              <button  class = "reservation-form__button btn" type = "submit">
                 <span>Оставить заявку</span>
               </button>
             </div>
@@ -318,7 +318,7 @@
           <div class = "contacts__information">
             <p>У вас ещё остались вопросы или сомнения?
             Приезжайте к нам в&nbsp;офис и мы вам все расскажем.</p>
-            <address>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
+            <address>г. Санкт Петербург, <br>ул.&nbsp;Большая Конюшенная, 19/8</address>
             <a href = "tel:88002000000">8-800-200-00-00</a>
           </div>
         </div>
@@ -326,7 +326,7 @@
     </main>
     <footer class = "page-footer">
       <div class="page-footer__wrapper container">
-        <a href = "#">
+        <a>
           <img src = "img/svg/logo.svg" width = "70" height = "38" alt = "Логотип">
         </a>
         <nav class = "navigation  page-footer__navigation">

@@ -1,13 +1,10 @@
 .contacts__wrapper {
   @include flex;
 
-  @media (max-width: $vp-576) {
-    flex-direction: column-reverse;
-  }
-
   @media (max-width: $vp-320) {
+    flex-direction: column-reverse;
     padding-top: 58px;
-    padding-bottom: 67px;
+    padding-bottom: 64px;
   }
 }
 
@@ -22,10 +19,9 @@
     height: 335px;
   }
 
-  @media (max-width: $vp-576) {
+  @media (max-width: $vp-320) {
     width: 100%;
     height: 316px;
-    margin: 0;
   }
 }
 
@@ -37,16 +33,17 @@
 
 .contacts__information {
   width: 43%;
-  padding: 75px 0;
-  padding-bottom: 35px;
+  padding: 3.3vw 0;
+  padding-bottom: 0;
 
   @media (max-width: $vp-768) {
+    align-self: flex-start;
     width: 48%;
-    padding: 57px 0;
-    padding-bottom: 15px;
+    padding: 8.5vw 0;
+    padding-bottom: 0;
   }
 
-  @media (max-width: $vp-576) {
+  @media (max-width: $vp-320) {
     width: 100%;
     padding: 0;
   }
@@ -55,16 +52,19 @@
 .contacts__information p {
   margin: 0;
   margin-bottom: 32px;
-  font-size: 18px;
+  font-size: calc(0.59vw + 10px);
   line-height: 27px;
   font-weight: 500;
 
   @media (max-width: $vp-768) {
-    margin-bottom: 28px;
+    margin-bottom: 3.5vw;
+    font-size: calc(1.05vw + 10px);
   }
 
   @media (max-width: $vp-320) {
     width: 280px;
+    margin-bottom: 27px;
+    font-size: 18px;
   }
 }
 
@@ -74,6 +74,14 @@
 
   @include background;
   background-position: 50% left;
+
+  @media (max-width: $vp-768) {
+    font-size: calc(1.05vw + 8px);
+  }
+
+  @media (max-width: $vp-320) {
+    font-size: 16px;
+  }
 }
 
 .contacts__information address {
@@ -83,6 +91,7 @@
   background-size: 18px 22px;
 
   @media (max-width: $vp-768) {
+    margin-bottom: 22px;
     background-position: top 15% left;
   }
 }
@@ -96,5 +105,13 @@
 
   @media (max-width: $vp-320) {
     margin-bottom: 35px;
+  }
+}
+
+.contacts br {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: block;
   }
 }

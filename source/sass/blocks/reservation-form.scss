@@ -2,14 +2,14 @@ form .reservation-form__wrapper {
   @include flex;
   flex-direction: column;
   align-items: stretch;
-  width: 303px;
-  padding: 42px 50px;
+  max-width: 304px;
+  padding: 42px 3.66vw;
   padding-bottom: 50px;
   background-color: $color-dark-blue;
 
-  @media (max-width: $vp-576) {
-    width: 230px;
-    padding: 40px 30px;
+  @media (max-width: $vp-768) {
+    padding: 42px 6.52vw;
+    padding-bottom: 49px;
   }
 
   @media (max-width: $vp-320) {
@@ -26,20 +26,22 @@ form .reservation-form__checkbox-info {
 
 form .reservation-form__information {
   margin: 0;
-  margin-bottom: 28px;
-  font-size: 18px;
+  margin-bottom: 27px;
+  font-size: calc(0.73vw + 8px);
   line-height: 27px;
   font-weight: 500;
 
-  @media (max-width: $vp-576) {
-    text-align: center;
+  @media (max-width: $vp-768) {
+    font-size: calc(1.05vw + 10px);
   }
 
   @media (max-width: $vp-320) {
     align-self: center;
     width: 220px;
     margin-bottom: 27px;
+    font-size: 18px;
     line-height: 26px;
+    text-align: center;
   }
 }
 
@@ -62,10 +64,14 @@ form .reservation-form__block:last-of-type {
 form .reservation-form__input {
   box-sizing: border-box;
   width: 100%;
-  padding: 11px 16px;
+  padding: 11px 15px;
+
+  @media (max-width: $vp-768) {
+    padding: 13px 12px;
+  }
 
   @media (max-width: $vp-320) {
-    padding: 10px 12px;
+    padding: 14px 12px;
   }
 }
 
@@ -79,14 +85,13 @@ form .reservation-form__checkbox-info {
   padding-left: 22px;
   margin-bottom: 28px;
   font-size: 10px;
-
-  @media (max-width: $vp-576) {
-    line-height: 10px;
-  }
+  cursor: pointer;
 
   @media (max-width: $vp-320) {
     width: 151px;
+    margin-bottom: 32px;
     padding-left: 27px;
+    line-height: 10px;
   }
 }
 
@@ -113,6 +118,10 @@ form .reservation-form__input-checkbox:checked + .reservation-form__checkbox-inf
   background-size: 10px 6px;
 }
 
+form .reservation-form__input-checkbox:focus + .reservation-form__checkbox-info::before {
+  border: 1px solid #0000ff;
+}
+
 form .reservation-form__button {
   display: block;
   padding: 11px;
@@ -120,12 +129,16 @@ form .reservation-form__button {
   line-height: 21px;
   font-weight: 600;
 
-
-  @media (max-width: $vp-576) {
-    padding: 16px 53px;
+  @media (max-width: $vp-320) {
+    padding: 10px 49px;
+    border: 1px solid $color-default-white;
   }
+}
+
+form.reservation-form br {
+  display: none;
 
   @media (max-width: $vp-320) {
-    padding: 11px 53px;
+    display: block;
   }
 }

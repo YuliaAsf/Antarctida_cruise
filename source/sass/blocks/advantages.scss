@@ -30,43 +30,39 @@
 .advantages ul {
   display: grid;
   grid-template-columns: 31% 31% 31%;
-  gap: 40px;
+  gap: 2.9vw;
 
   @include reset-list;
 
   @media (max-width: $vp-768) {
-    gap: 25px;
+    gap: 3.3vw;
   }
 
-  @media (max-width: $vp-700) {
+  @media (max-width: $vp-576) {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   @media (max-width: $vp-320) {
-    gap: 32px;
+    gap: 33px;
   }
 }
 
 .advantages__item {
-  padding: 80px 30px 25px 30px;
-
-  box-sizing: border-box;
   max-width: 360px;
+  padding: 80px 2.07vw 25px 2.07vw;
+  box-sizing: border-box;
   background-color: $color-default-white;
 
   @include background;
 
   @media (max-width: $vp-768) {
-    padding: 70px 16px 20px 20px;
+    padding: 70px 1.2vw 20px 2.5vw;
     max-width: 206px;
   }
 
-  @media (max-width: $vp-700) {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
   @media (max-width: $vp-320) {
+    max-width: 100%;
     padding: 70px 16px 20px 20px;
   }
 }
@@ -118,48 +114,64 @@
 .advantages h3 {
   margin: 0;
   margin-bottom: 9px;
-  font-size: 18px;
+  font-size: calc(0.6vw + 10px);
   line-height: 27px;
   font-weight: 500;
 
-  @media (max-width: $vp-992) {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-
   @media (max-width: $vp-768) {
-    font-size: 18px;
+    font-size: calc(1.9vw + 4px);
     line-height: 25px;
   }
 
   @media (max-width: $vp-320) {
+    font-size: 18px;
     margin-bottom: 8px;
+  }
+}
+
+.advantages__item--ship h3 {
+  @media (max-width: $vp-320) {
+    width: 200px;
+  }
+}
+
+.advantages__item--ship p {
+  @media (max-width: $vp-768) {
+    min-width: 151px;
   }
 }
 
 .advantages__item--meal h3 {
   @media (max-width: $vp-320) {
-    width: 133px;
+    max-width: 133px;
   }
 }
 
 .advantages__item--boat h3 {
-  @media (max-width: $vp-320) {
-    width: 151px;
+  @media (max-width: $vp-576) {
+    max-width: 151px;
     margin-top: -3px;
   }
 }
 
 .advantages p {
   margin: 0;
-  font-size: 14px;
+  font-size: calc(0.3vw + 10px);
   line-height: 20px;
+
+  @media (max-width: $vp-768) {
+    font-size: calc(0.7vw + 8.7px);
+  }
+
+  @media (max-width: $vp-320) {
+    font-size: 14px;
+  }
 }
 
 .advantages__item--boat p {
   max-width: 241px;
 
-  @media (max-width: $vp-700) {
+  @media (max-width: $vp-768) {
     max-width: 100%;
   }
 }
