@@ -17,9 +17,9 @@ button.addEventListener('click', ()=> {
   }
 });
 
-let i = 0;
-for (i = 0; i <= link.length; i++) {
+for (let i = 0; i <= link.length - 1; i++) {
   link[i].addEventListener('click', ()=> {
+
     if (container.classList.contains('page-header__menu-opened')) {
       container.classList.remove('page-header__menu-opened');
       container.classList.add('page-header__menu-closed');
