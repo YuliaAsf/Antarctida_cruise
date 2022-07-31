@@ -991,6 +991,10 @@ form.reservation-form br {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .contacts__map {
@@ -1718,10 +1722,6 @@ form.reservation-form br {
   }
 
   .navigation a {
-    font-size: 12px;
-  }
-
-  .navigation a {
     padding: 5px;
     font-size: 18px;
     line-height: 22px;
@@ -2036,9 +2036,9 @@ form.reservation-form br {
 @media (max-width: 320px) {
   .contacts__wrapper {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding-top: 58px;
     padding-bottom: 64px;
   }
