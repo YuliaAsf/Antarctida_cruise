@@ -1084,15 +1084,18 @@ form.reservation-form br {
 }
 
 .catalog li {
+  position: relative;
   min-height: 386px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
 }
 
 .catalog__block {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 100%;
@@ -1131,6 +1134,8 @@ form.reservation-form br {
 }
 
 .catalog__block--information {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1179,10 +1184,10 @@ form.reservation-form br {
   background-color: #f9fbfd;
 }
 
-.catalog li:hover .catalog__block--information {
-  -webkit-transform: translate(-100%);
-  -ms-transform: translate(-100%);
-  transform: translate(-100%);
+.catalog li:hover .catalog__block--information,
+.catalog__block--information:focus-within {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 .page-footer {
