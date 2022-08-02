@@ -2,6 +2,9 @@ const button = document.querySelector('.page-header button');
 const container = document.querySelector('.page-header__wrapper');
 const link = document.querySelectorAll('.page-header__navigation a');
 const body = document.querySelector('body');
+const card = document.querySelectorAll('.catalog li');
+const cardInformation = document.querySelectorAll('.catalog__block--information');
+const formData = document.querySelectorAll('.reservation-form__input');
 
 container.classList.remove('page-header__menu-nojs');
 
@@ -28,3 +31,12 @@ for (let i = 0; i <= link.length - 1; i++) {
   });
 }
 
+for (let i = 0; i <= card.length - 1; i++) {
+  card[i].addEventListener('touchstart', ()=> {
+    cardInformation[i].style.transform = 'rotateY: 360deg';
+  });
+}
+
+for (let i = 0; i <= formData.length - 1; i++) {
+  localStorage.setItem('formData', formData.value);
+}

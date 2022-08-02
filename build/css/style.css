@@ -457,6 +457,10 @@ body {
 a {
   color: #011c40;
   text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 a:hover {
@@ -561,6 +565,10 @@ video {
   background-color: #f9fbfd;
   border: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn:disabled {
@@ -907,7 +915,7 @@ form .reservation-form__block {
 }
 
 form .reservation-form__block:last-of-type {
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 }
 
 form .reservation-form__input {
@@ -915,6 +923,11 @@ form .reservation-form__input {
   box-sizing: border-box;
   width: 100%;
   padding: 10.5px 15px;
+  cursor: text;
+}
+
+form .reservation-form__input:hover {
+  outline: 2px solid #ffaa00;
 }
 
 form .reservation-form__input::-webkit-input-placeholder {
@@ -941,9 +954,14 @@ form .reservation-form__checkbox-info {
   position: relative;
   display: block;
   padding-left: 22px;
-  margin-bottom: 27px;
+  margin-bottom: 33px;
   font-size: 10px;
+  line-height: 13px;
   cursor: pointer;
+}
+
+form .reservation-form__checkbox-info:hover {
+  text-decoration: underline;
 }
 
 form .reservation-form__checkbox-info::before {
@@ -1093,7 +1111,7 @@ form.reservation-form br {
   top: 0;
   right: 0;
   left: 0;
-  right: 0;
+  bottom: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-box-sizing: border-box;
@@ -1133,7 +1151,16 @@ form.reservation-form br {
   bottom: 22px;
 }
 
+.catalog__block--picture img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .catalog__block--information {
+  position: relative;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   display: -webkit-box;
@@ -1182,12 +1209,6 @@ form.reservation-form br {
   font-size: 14px;
   font-weight: 600;
   background-color: #f9fbfd;
-}
-
-.catalog li:hover .catalog__block--information,
-.catalog__block--information:focus-within {
-  -webkit-transform: rotateY(360deg);
-  transform: rotateY(360deg);
 }
 
 .page-footer {
@@ -1287,6 +1308,14 @@ form.reservation-form br {
   margin-left: 0;
 }
 
+.social svg {
+  fill: #f9fbfd;
+}
+
+.social a:hover svg {
+  fill: #ffaa00;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1299,6 +1328,14 @@ form.reservation-form br {
   .btn:focus {
     opacity: 0.8;
     border: 1px solid #0000ff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog li:hover .catalog__block--information,
+  .catalog__block--information:focus-within {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
@@ -1855,7 +1892,7 @@ form.reservation-form br {
   .intro__wrapper {
     min-height: 239px;
     padding: 0 4.8vw;
-    padding-top: 108px;
+    padding-top: 118px;
   }
 
   .intro h1 {
@@ -1900,13 +1937,12 @@ form.reservation-form br {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     min-width: 290px;
     max-width: 290px;
     height: 186px;
-    margin: 0 auto;
   }
 
   .advantages h2 {

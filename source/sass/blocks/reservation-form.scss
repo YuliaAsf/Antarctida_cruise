@@ -59,7 +59,7 @@ form .reservation-form__block {
 }
 
 form .reservation-form__block:last-of-type {
-  margin-bottom: 16px;
+  margin-bottom: 21px;
 
   @media (max-width: $vp-767) {
     margin-bottom: 20px;
@@ -70,6 +70,11 @@ form .reservation-form__input {
   box-sizing: border-box;
   width: 100%;
   padding: 10.5px 15px;
+  cursor: text;
+
+  &:hover {
+    outline: 2px solid $color-accent;
+  }
 
   @media (max-width: $vp-1023) {
     padding: 10px 12px;
@@ -88,9 +93,14 @@ form .reservation-form__checkbox-info {
   position: relative;
   display: block;
   padding-left: 22px;
-  margin-bottom: 27px;
+  margin-bottom: 33px;
   font-size: 10px;
+  line-height: 13px;
   cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   @media (max-width: $vp-767) {
     width: 151px;

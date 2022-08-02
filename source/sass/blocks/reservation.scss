@@ -11,10 +11,11 @@
 
 .reservation__wrapper {
   padding: 50px 163px;
+
   @include flex;
 
   @media (max-width: $vp-1366) {
-  padding: 50px 11.9vw;
+    padding: 50px 11.9vw;
   }
 
   @media (max-width: $vp-1023) {

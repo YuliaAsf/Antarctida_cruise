@@ -18,6 +18,7 @@
   display: grid;
   grid-template-columns: 38px 38px 38px;
   gap: 10px;
+
   @include reset-list;
 
   @media (max-width: $vp-1023) {
@@ -71,7 +72,13 @@
 }
 
 .social svg {
+  fill: $color-default-white;
+
   @media (max-width: $vp-1023) {
     transform: scale(0.8);
   }
+}
+
+.social a:hover svg {
+  fill: $color-accent;
 }
