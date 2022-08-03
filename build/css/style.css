@@ -1817,8 +1817,8 @@ form.reservation-form br {
     position: absolute;
     z-index: 4;
     display: block;
-    top: 20px;
-    right: 20px;
+    top: 24px;
+    right: 10px;
     background-image: url("../img/svg/close-button.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1852,7 +1852,7 @@ form.reservation-form br {
 
   .navigation {
     display: none;
-    min-width: 285px;
+    min-width: 290px;
   }
 
   .navigation ul {
@@ -1868,7 +1868,7 @@ form.reservation-form br {
     align-items: flex-start;
     min-height: 418px;
     margin-right: -10px;
-    padding: 75px 25px;
+    padding: 85px 25px;
     background-color: #f9fbfd;
   }
 
@@ -1878,7 +1878,7 @@ form.reservation-form br {
   }
 
   .navigation li {
-    margin-bottom: 18px;
+    margin-bottom: 26px;
     margin-right: 0;
   }
 
@@ -1887,6 +1887,10 @@ form.reservation-form br {
     font-size: 18px;
     line-height: 22px;
     color: #011c40;
+  }
+
+  .page-header__navigation a {
+    padding: 5px 0;
   }
 
   .intro__wrapper {
