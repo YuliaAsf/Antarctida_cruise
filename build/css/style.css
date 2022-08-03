@@ -1109,8 +1109,8 @@ form.reservation-form br {
 .catalog__block {
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
+  right: 0.99px;
+  left: 0.99px;
   bottom: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -1154,9 +1154,9 @@ form.reservation-form br {
 .catalog__block--picture img {
   position: absolute;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .catalog__block--information {
