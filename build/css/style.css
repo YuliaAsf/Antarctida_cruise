@@ -621,12 +621,17 @@ video {
   fill: #f9fbfd;
 }
 
+.page-header__menu-opened {
+  position: relative;
+}
+
 .page-header__menu-opened nav {
   position: absolute;
   display: block;
   z-index: 3;
   top: 0;
   right: 0;
+  left: 35px;
 }
 
 .navigation {
@@ -1846,13 +1851,12 @@ form.reservation-form br {
     position: absolute;
     z-index: 4;
     top: 20px;
-    right: 220px;
+    left: 50px;
     fill: #011c40;
   }
 
   .navigation {
     display: none;
-    min-width: 290px;
   }
 
   .navigation ul {

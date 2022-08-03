@@ -95,12 +95,17 @@
   }
 }
 
+.page-header__menu-opened {
+  position: relative;
+}
+
 .page-header__menu-opened nav {
   position: absolute;
   display: block;
   z-index: 3;
   top: 0;
   right: 0;
+  left: 35px;
 }
 
 .page-header__menu-opened button {
@@ -144,7 +149,7 @@
     position: absolute;
     z-index: 4;
     top: 20px;
-    right: 220px;
+    left: 50px;
     fill: $color-dark-blue;
   }
 }
