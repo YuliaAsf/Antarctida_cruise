@@ -1918,7 +1918,7 @@ form.reservation-form br {
 
   .description__content-wrapper {
     width: 100%;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .description h2 {
@@ -2084,6 +2084,7 @@ form.reservation-form br {
   .contacts__information p {
     width: 100%;
     margin-bottom: 27px;
+    padding: 0;
   }
 
   .contacts__information a {
