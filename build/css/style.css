@@ -1996,6 +1996,9 @@ form.reservation-form br {
   }
 
   .reservation__wrapper {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     padding: 60px 15px;
     padding-bottom: 65px;
   }
@@ -2015,16 +2018,13 @@ form.reservation-form br {
   }
 
   form .reservation-form__wrapper {
-    width: 230px;
+    max-width: 100%;
     padding: 33px 30px;
     padding-bottom: 40px;
   }
 
   form .reservation-form__information {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    width: 220px;
+    width: 100%;
     margin-bottom: 27px;
     font-size: 18px;
     line-height: 26px;

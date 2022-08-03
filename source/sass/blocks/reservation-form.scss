@@ -18,7 +18,7 @@ form .reservation-form__wrapper {
   }
 
   @media (max-width: $vp-767) {
-    width: 230px;
+    max-width: 100%;
     padding: 33px 30px;
     padding-bottom: 40px;
   }
@@ -41,8 +41,7 @@ form .reservation-form__information {
   }
 
   @media (max-width: $vp-767) {
-    align-self: center;
-    width: 220px;
+    width: 100%;
     margin-bottom: 27px;
     font-size: 18px;
     line-height: 26px;
