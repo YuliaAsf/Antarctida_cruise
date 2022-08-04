@@ -100,7 +100,7 @@
 }
 
 .page-header__menu-opened nav {
-  position: absolute;
+  position: fixed;
   display: block;
   z-index: 3;
   top: 0;
