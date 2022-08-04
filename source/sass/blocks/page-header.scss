@@ -77,7 +77,12 @@
 
 .page-header__menu-closed nav {
   @media (max-width: $vp-767) {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s linear;
   }
 }
 
@@ -97,15 +102,18 @@
 
 .page-header__menu-opened {
   position: relative;
+
 }
 
 .page-header__menu-opened nav {
-  position: fixed;
+  position: absolute;
   display: block;
   z-index: 3;
+  opacity: 1;
   top: 0;
   right: 0;
   left: 35px;
+  transition: all 0.3s linear;
 }
 
 .page-header__menu-opened button {
@@ -143,13 +151,38 @@
   }
 }
 
-.page-header__menu-nojs svg,
-.page-header__menu-opened svg {
+.page-header__menu-nojs .page-header__link,
+.page-header__menu-opened .page-header__link {
+  display: none;
+}
+
+.page-header__navigation svg {
+  display: none;
+
   @media (max-width: $vp-767) {
+    display: block;
     position: absolute;
     z-index: 4;
     top: 20px;
-    left: 50px;
+    left: 15px;
     fill: $color-dark-blue;
   }
 }
+
+.page-header__navigation {
+  @media (max-width: $vp-767) {
+    box-shadow: 0 4px 4px $color-black-muted;
+    background-color: $color-default-white;
+    padding: 85px 25px;
+    overflow: hidden;
+  }
+}
+
+.page-header__navigation ul {
+  @media (max-width: $vp-767) {
+    padding: 0;
+    overflow: auto;
+    height: calc(100vh - 60px);
+  }
+}
+

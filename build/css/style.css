@@ -626,12 +626,25 @@ video {
 }
 
 .page-header__menu-opened nav {
-  position: fixed;
+  position: absolute;
   display: block;
   z-index: 3;
+  opacity: 1;
   top: 0;
   right: 0;
   left: 35px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.page-header__menu-nojs .page-header__link,
+.page-header__menu-opened .page-header__link {
+  display: none;
+}
+
+.page-header__navigation svg {
+  display: none;
 }
 
 .navigation {
@@ -693,7 +706,7 @@ video {
 .intro h1,
 .intro p {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin: 0;
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -1801,7 +1814,14 @@ form.reservation-form br {
   }
 
   .page-header__menu-closed nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
 
   .page-header__menu-closed button {
@@ -1846,17 +1866,27 @@ form.reservation-form br {
     display: none;
   }
 
-  .page-header__menu-nojs svg,
-  .page-header__menu-opened svg {
+  .page-header__navigation svg {
+    display: block;
     position: absolute;
     z-index: 4;
     top: 20px;
-    left: 50px;
+    left: 15px;
     fill: #011c40;
   }
 
-  .navigation {
-    display: none;
+  .page-header__navigation {
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #f9fbfd;
+    padding: 85px 25px;
+    overflow: hidden;
+  }
+
+  .page-header__navigation ul {
+    padding: 0;
+    overflow: auto;
+    height: calc(100vh - 60px);
   }
 
   .navigation ul {
@@ -1872,24 +1902,9 @@ form.reservation-form br {
     align-items: flex-start;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    height: 418px;
     margin-right: -10px;
     padding: 85px 25px;
     background-color: #f9fbfd;
-  }
-
-  .page-header__navigation {
-    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #f9fbfd;
-    padding: 85px 25px;
-    overflow: hidden;
-  }
-
-  .page-header__navigation ul {
-    padding: 0;
-    overflow: scroll;
-    height: calc(100vh - 65px);
   }
 
   .navigation li {

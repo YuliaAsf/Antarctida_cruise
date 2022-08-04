@@ -11,7 +11,7 @@
   <body>
     <header class = "page-header">
       <div class="page-header__wrapper container page-header__menu-closed page-header__menu-nojs">
-        <a>
+        <a class = "page-header__link">
           <svg width="70" height="38" viewBox="0 0 70 38" role = "img" aria-hidden = "true" focusable = "false">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
           </svg>
@@ -20,6 +20,11 @@
           <span class = "visually-hidden">Кнопка открытия меню</span>
         </button>
         <nav class = "navigation page-header__navigation">
+          <a>
+            <svg width="70" height="38" viewBox="0 0 70 38" role = "img" aria-hidden = "true" focusable = "false">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
           <ul>
             <li>
               <a href = "#advantages" hreflang = "ru">Преимущества</a>
@@ -292,7 +297,7 @@
               </div>
               <div class = "reservation-form__block">
                 <label class = "visually-hidden" for = "phone">Ваше телефон:</label>
-                <input  class = "reservation-form__input" type = "tel" name = "phone" id = "phone" pattern="[0-9]{10}" placeholder = "Телефон" required>
+              <input  class = "reservation-form__input" type = "tel" name = "phone" id = "phone" pattern="[0-9]{1-15}" placeholder = "Телефон" required>
               </div>
               <div class = "reservation-form__block">
                 <label class = "visually-hidden" for = "email">Ваше Email:</label>
