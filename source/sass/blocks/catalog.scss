@@ -38,7 +38,7 @@
 
 .catalog ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 260px);
   justify-content: center;
   gap: 30px;
 
@@ -62,7 +62,7 @@
 
 .catalog li {
   position: relative;
-  max-height: 386px;
+  height: 386px;
 
   @media (max-width: $vp-1023) {
     width: 309px;
@@ -170,7 +170,8 @@
   flex-direction: column;
   font-size: 14px;
   line-height: 20px;
-  padding: 35px 25px;
+  padding: 28px 25px;
+  padding-bottom: 35px;
   color: $color-default-white;
   background-color: $color-dark-blue;
 

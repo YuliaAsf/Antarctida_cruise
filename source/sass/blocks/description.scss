@@ -32,8 +32,8 @@
 
 .description h2 {
   margin: 0;
-  margin-bottom: 28px;
-  padding-top: 58px;
+  margin-bottom: 2vw;
+  padding-top: 4.2vw;
   font-size: 28px;
   line-height: 36px;
   font-weight: 600;
@@ -72,10 +72,9 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  align-self: flex-end;
+  align-self: flex-start;
 
   @media (max-width: $vp-1023) {
-    align-self: flex-start;
     min-width: 47.9%;
     max-width: 47.9%;
     height: 264px;

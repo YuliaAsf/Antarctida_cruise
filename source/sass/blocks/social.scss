@@ -3,9 +3,11 @@
   justify-content: flex-end;
   align-self: flex-start;
   flex-grow: 1;
+  padding-top: 8px;
 
   @media (max-width: $vp-1023) {
     margin-left: 5px;
+    padding: 0;
   }
 
   @media (max-width: $vp-767) {

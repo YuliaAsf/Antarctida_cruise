@@ -660,6 +660,11 @@ video {
   align-self: flex-start;
 }
 
+.page-header__link svg {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
 .navigation {
   min-width: 53%;
   margin-right: -10px;
@@ -759,8 +764,8 @@ video {
 
 .description h2 {
   margin: 0;
-  margin-bottom: 28px;
-  padding-top: 58px;
+  margin-bottom: 2vw;
+  padding-top: 4.2vw;
   font-size: 28px;
   line-height: 36px;
   font-weight: 600;
@@ -778,8 +783,8 @@ video {
   height: 100%;
   position: relative;
   overflow: hidden;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .description img {
@@ -1123,8 +1128,7 @@ form.reservation-form br {
 .catalog ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 260px);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1136,7 +1140,7 @@ form.reservation-form br {
 
 .catalog li {
   position: relative;
-  max-height: 386px;
+  height: 386px;
 }
 
 .catalog__block {
@@ -1216,7 +1220,8 @@ form.reservation-form br {
   flex-direction: column;
   font-size: 14px;
   line-height: 20px;
-  padding: 35px 25px;
+  padding: 28px 25px;
+  padding-bottom: 35px;
   color: #f9fbfd;
   background-color: #011c40;
 }
@@ -1309,6 +1314,7 @@ form.reservation-form br {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  padding-top: 8px;
 }
 
 .social ul {
@@ -1367,7 +1373,7 @@ form.reservation-form br {
   .btn:hover,
   .btn:focus {
     opacity: 0.8;
-    border: 1px solid #0000ff;
+    outline: 1px solid #0000ff;
   }
 }
 
@@ -1496,8 +1502,6 @@ form.reservation-form br {
   }
 
   .description__image-wrapper {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
     min-width: 47.9%;
     max-width: 47.9%;
     height: 264px;
@@ -1611,7 +1615,7 @@ form.reservation-form br {
   }
 
   .contacts__wrapper {
-    padding: 83px 0;
+    padding: 83px 45px;
   }
 
   .contacts__map {
@@ -1628,7 +1632,6 @@ form.reservation-form br {
 
   .contacts__information p {
     margin-bottom: 28px;
-    padding-right: 25px;
   }
 
   .contacts__information address,
@@ -1750,6 +1753,7 @@ form.reservation-form br {
 
   .social {
     margin-left: 5px;
+    padding: 0;
   }
 
   .social ul {
@@ -1876,17 +1880,22 @@ form.reservation-form br {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #f9fbfd;
     padding: 85px 25px;
+    padding-left: 20px;
     overflow: hidden;
   }
 
   .page-header__navigation ul {
     padding: 0;
-    overflow: auto;
+    overflow: scroll;
     height: calc(100vh - 60px);
   }
 
   .page-header__navigation a {
     padding: 5px 0;
+  }
+
+  .page-header__navigation > a {
+    display: block;
   }
 
   .navigation ul {
@@ -1903,7 +1912,7 @@ form.reservation-form br {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     margin-right: -10px;
-    padding: 85px 25px;
+    padding-top: 0;
     background-color: #f9fbfd;
   }
 
@@ -2214,6 +2223,7 @@ form.reservation-form br {
   }
 
   .page-footer__navigation a {
+    font-size: 12px;
     color: #f9fbfd;
   }
 
