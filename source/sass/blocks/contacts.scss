@@ -65,14 +65,13 @@
 .contacts__information p {
   margin: 0;
   margin-bottom: 32px;
-  font-size: calc(0.59vw + 10px);
+  font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 28px;
     padding-right: 25px;
-    font-size: 18px;
   }
 
   @media (max-width: $vp-767) {

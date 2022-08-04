@@ -114,10 +114,6 @@
   color: $color-default-white;
 
   @media (max-width: $vp-1366) {
-    font-size: 1.32vw;
-  }
-
-  @media (max-width: $vp-1023) {
     font-size: 18px;
   }
 }
@@ -176,12 +172,7 @@
   color: $color-default-white;
   background-color: $color-dark-blue;
 
-  @media (max-width: $vp-1366) {
-    padding: 2vw 0.1vw 2.5vw 1.85vw;
-    font-size: calc(0.43vw + 8px);
-  }
-
-  @media (max-width: $vp-1023) {
+    @media (max-width: $vp-1023) {
     padding: 35px;
     padding-top: 28px;
     font-size: 14px;
@@ -228,7 +219,6 @@
   background-color: $color-default-white;
 
   @media (max-width: $vp-1366) {
-    font-size: 1.03vw;
     padding: 11px 3.5vw;
   }
 

@@ -33,22 +33,17 @@
 
 .reservation h2 {
   margin: 0;
-  margin-bottom: 14px;
-  padding-top: 166px;
+  margin-bottom: 5px;
+  padding-top: 164px;
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
 
-  @media (max-width: $vp-1366) {
-    font-size: 2.92vw;
-    line-height: calc(3vw + 10px);
-  }
-
   @media (max-width: $vp-1023) {
     margin-bottom: 5px;
     padding-top: 5px;
-    font-size: calc(3vw + 11px);
-    line-height: calc(5vw + 13px);
+    font-size: 34px;
+    line-height: 51px;
     text-align: center;
   }
 
@@ -78,14 +73,13 @@
 .reservation__content-wrapper p {
   max-width: 352px;
   margin: 0;
+  font-size: 18px;
   line-height: 27px;
-  font-size: calc(0.59vw + 10px);
 
 
   @media (max-width: $vp-1023) {
     margin: 0 auto;
     margin-bottom: 53px;
-    font-size: calc(0.8vw + 12px);
     text-align: center;
   }
 

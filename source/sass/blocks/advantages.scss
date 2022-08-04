@@ -36,7 +36,7 @@
 .advantages ul {
   display: grid;
   grid-template-columns: 31% 31% 31%;
-  gap: 41px;
+  gap: 3vw;
 
   @include reset-list;
 
@@ -54,7 +54,7 @@
 
 .advantages__item {
   max-width: 360px;
-  padding: 80px 2.07vw 25px 2.07vw;
+  padding: 80px 30px 25px 30px;
   box-sizing: border-box;
   background-color: $color-default-white;
 
@@ -117,7 +117,7 @@
 .advantages h3 {
   margin: 0;
   margin-bottom: 9px;
-  font-size: calc(0.6vw + 10px);
+  font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 
@@ -160,12 +160,8 @@
 
 .advantages p {
   margin: 0;
-  font-size: calc(0.3vw + 10px);
+  font-size: 14px;;
   line-height: 20px;
-
-  @media (max-width: $vp-1023) {
-    font-size: 14px;
-  }
 }
 
 .advantages__item--boat p {

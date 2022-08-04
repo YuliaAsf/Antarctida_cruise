@@ -647,6 +647,14 @@ video {
   display: none;
 }
 
+.page-header__navigation ul {
+  height: 100%;
+}
+
+.page-header__navigation > a {
+  display: none;
+}
+
 .navigation {
   min-width: 53%;
   margin-right: -10px;
@@ -686,7 +694,7 @@ video {
 .navigation a {
   padding: 10px;
   font-weight: 500;
-  font-size: calc(0.44vw + 10px);
+  font-size: 16px;
   line-height: 19.5px;
   color: #f9fbfd;
 }
@@ -714,13 +722,13 @@ video {
 
 .intro h1 {
   margin-bottom: 0.96vw;
-  font-size: calc(1.2vw + 37.5px);
+  font-size: 54px;
   line-height: 66px;
   font-weight: 700;
 }
 
 .intro p {
-  font-size: calc(1vw + 6.3px);
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -748,14 +756,15 @@ video {
   margin: 0;
   margin-bottom: 28px;
   padding-top: 58px;
-  font-size: calc(0.45vw + 22px);
+  font-size: 28px;
   line-height: 36px;
   font-weight: 600;
 }
 
 .description p {
   margin: 0;
-  font-size: calc(0.3vw + 11.9px);
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .description__image-wrapper {
@@ -795,7 +804,7 @@ video {
   display: grid;
   -ms-grid-columns: 31% 31% 31%;
   grid-template-columns: 31% 31% 31%;
-  gap: 41px;
+  gap: 3vw;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -803,7 +812,7 @@ video {
 
 .advantages__item {
   max-width: 360px;
-  padding: 80px 2.07vw 25px 2.07vw;
+  padding: 80px 30px 25px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #f9fbfd;
@@ -834,14 +843,14 @@ video {
 .advantages h3 {
   margin: 0;
   margin-bottom: 9px;
-  font-size: calc(0.6vw + 10px);
+  font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
 
 .advantages p {
   margin: 0;
-  font-size: calc(0.3vw + 10px);
+  font-size: 14px;
   line-height: 20px;
 }
 
@@ -872,8 +881,8 @@ video {
 
 .reservation h2 {
   margin: 0;
-  margin-bottom: 14px;
-  padding-top: 166px;
+  margin-bottom: 5px;
+  padding-top: 164px;
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
@@ -888,8 +897,8 @@ video {
 .reservation__content-wrapper p {
   max-width: 352px;
   margin: 0;
+  font-size: 18px;
   line-height: 27px;
-  font-size: calc(0.59vw + 10px);
 }
 
 form .reservation-form__wrapper {
@@ -923,7 +932,7 @@ form .reservation-form__checkbox-info {
 form .reservation-form__information {
   margin: 0;
   margin-bottom: 28px;
-  font-size: calc(0.73vw + 8px);
+  font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
@@ -1058,7 +1067,7 @@ form.reservation-form br {
 .contacts__information p {
   margin: 0;
   margin-bottom: 32px;
-  font-size: calc(0.59vw + 10px);
+  font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 }
@@ -1273,7 +1282,7 @@ form.reservation-form br {
 }
 
 .page-footer__navigation a {
-  font-size: calc(0.3vw + 12px);
+  font-size: 16px;
   display: inline-block;
 }
 
@@ -1366,11 +1375,6 @@ form.reservation-form br {
     padding: 50px 11.9vw;
   }
 
-  .reservation h2 {
-    font-size: 2.92vw;
-    line-height: calc(3vw + 10px);
-  }
-
   .reservation__content-wrapper {
     margin-right: 2.2vw;
   }
@@ -1392,12 +1396,7 @@ form.reservation-form br {
   }
 
   .catalog h3 {
-    font-size: 1.32vw;
-  }
-
-  .catalog__block--information {
-    padding: 2vw 0.1vw 2.5vw 1.85vw;
-    font-size: calc(0.43vw + 8px);
+    font-size: 18px;
   }
 
   .catalog__block--information h3 {
@@ -1406,7 +1405,6 @@ form.reservation-form br {
   }
 
   .catalog__block--information a {
-    font-size: 1.03vw;
     padding: 11px 3.5vw;
   }
 }
@@ -1484,11 +1482,6 @@ form.reservation-form br {
     line-height: 36px;
   }
 
-  .description p {
-    font-size: calc(0.5vw + 12.2px);
-    line-height: 24px;
-  }
-
   .description__image-wrapper {
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -1548,10 +1541,6 @@ form.reservation-form br {
     min-width: 151px;
   }
 
-  .advantages p {
-    font-size: 14px;
-  }
-
   .advantages__item--boat p {
     max-width: 100%;
   }
@@ -1568,8 +1557,8 @@ form.reservation-form br {
   .reservation h2 {
     margin-bottom: 5px;
     padding-top: 5px;
-    font-size: calc(3vw + 11px);
-    line-height: calc(5vw + 13px);
+    font-size: 34px;
+    line-height: 51px;
     text-align: center;
   }
 
@@ -1586,7 +1575,6 @@ form.reservation-form br {
   .reservation__content-wrapper p {
     margin: 0 auto;
     margin-bottom: 53px;
-    font-size: calc(0.8vw + 12px);
     text-align: center;
   }
 
@@ -1628,7 +1616,6 @@ form.reservation-form br {
   .contacts__information p {
     margin-bottom: 28px;
     padding-right: 25px;
-    font-size: 18px;
   }
 
   .contacts__information address,
@@ -1673,10 +1660,6 @@ form.reservation-form br {
 
   .catalog li:nth-child(even) {
     justify-self: flex-start;
-  }
-
-  .catalog h3 {
-    font-size: 18px;
   }
 
   .catalog__block--picture h3 {
@@ -1889,6 +1872,10 @@ form.reservation-form br {
     height: calc(100vh - 60px);
   }
 
+  .page-header__navigation a {
+    padding: 5px 0;
+  }
+
   .navigation ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1917,10 +1904,6 @@ form.reservation-form br {
     font-size: 18px;
     line-height: 22px;
     color: #011c40;
-  }
-
-  .page-header__navigation a {
-    padding: 5px 0;
   }
 
   .intro__wrapper {
@@ -2218,7 +2201,6 @@ form.reservation-form br {
   }
 
   .page-footer__navigation a {
-    font-size: 12px;
     color: #f9fbfd;
   }
 

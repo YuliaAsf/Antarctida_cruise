@@ -57,7 +57,7 @@
 .navigation a {
   padding: 10px;
   font-weight: 500;
-  font-size: calc(0.44vw + 10px);
+  font-size: 16px;
   line-height: 19.5px;
   color: $color-default-white;
 
@@ -74,9 +74,3 @@
   }
 }
 
-.page-header__navigation a {
-  @media (max-width: $vp-767) {
-    padding: 5px 0;
-  }
-
-}

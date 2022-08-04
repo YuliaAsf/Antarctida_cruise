@@ -170,6 +170,7 @@
 }
 
 .page-header__navigation {
+
   @media (max-width: $vp-767) {
     box-shadow: 0 4px 4px $color-black-muted;
     background-color: $color-default-white;
@@ -179,10 +180,22 @@
 }
 
 .page-header__navigation ul {
+  height: 100%;
+
   @media (max-width: $vp-767) {
     padding: 0;
     overflow: auto;
     height: calc(100vh - 60px);
   }
+}
+
+.page-header__navigation a {
+  @media (max-width: $vp-767) {
+    padding: 5px 0;
+  }
+}
+
+.page-header__navigation > a {
+  display: none;
 }
 

@@ -26,7 +26,7 @@
 
 .intro h1 {
   margin-bottom: 0.96vw;
-  font-size: calc(1.2vw + 37.5px);
+  font-size: 54px;
   line-height: 66px;
   font-weight: 700;
 
@@ -45,7 +45,7 @@
 }
 
 .intro p {
-  font-size: calc(1vw + 6.3px);
+  font-size: 20px;
   line-height: 24px;
 
   @media (max-width: $vp-1023) {

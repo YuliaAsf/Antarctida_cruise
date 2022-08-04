@@ -104,7 +104,7 @@
 }
 
 .page-footer__navigation a {
-  font-size: calc(0.3vw + 12px);
+  font-size: 16px;
   display: inline-block;
 
   @media (max-width: $vp-1023) {
@@ -113,7 +113,6 @@
   }
 
   @media (max-width: $vp-767) {
-    font-size: 12px;
     color: $color-default-white;
   }
 }

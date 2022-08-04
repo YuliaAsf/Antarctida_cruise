@@ -34,7 +34,7 @@
   margin: 0;
   margin-bottom: 28px;
   padding-top: 58px;
-  font-size: calc(0.45vw + 22px);
+  font-size: 28px;
   line-height: 36px;
   font-weight: 600;
 
@@ -57,12 +57,8 @@
 
 .description p {
   margin: 0;
-  font-size: calc(0.3vw + 11.9px);
-
-  @media (max-width: $vp-1023) {
-    font-size: calc(0.5vw + 12.2px);
-    line-height: 24px;
-  }
+  font-size: 16px;
+  line-height: 24px;
 
   @media (max-width: $vp-767) {
     margin-bottom: 35px;
