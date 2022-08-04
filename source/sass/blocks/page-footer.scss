@@ -32,6 +32,7 @@
 
 .page-footer__wrapper > a {
   margin-right: 30px;
+  align-self: flex-start;
 
   @media (max-width: $vp-1023) {
     margin-right: 3.3vw;
@@ -40,6 +41,7 @@
 
 .page-footer img {
   margin-bottom: 10px;
+  min-width: 70px;
 
   @media (max-width: $vp-1023) {
     min-width: 38px;

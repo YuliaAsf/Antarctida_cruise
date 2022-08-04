@@ -655,6 +655,11 @@ video {
   display: none;
 }
 
+.page-header__link {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
 .navigation {
   min-width: 53%;
   margin-right: -10px;
@@ -880,6 +885,7 @@ video {
 }
 
 .reservation h2 {
+  max-width: 500px;
   margin: 0;
   margin-bottom: 5px;
   padding-top: 164px;
@@ -1130,7 +1136,7 @@ form.reservation-form br {
 
 .catalog li {
   position: relative;
-  min-height: 386px;
+  max-height: 386px;
 }
 
 .catalog__block {
@@ -1188,8 +1194,10 @@ form.reservation-form br {
 
 .catalog__block--information {
   position: relative;
+  max-height: 100%;
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  overflow-y: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1261,10 +1269,13 @@ form.reservation-form br {
 
 .page-footer__wrapper > a {
   margin-right: 30px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .page-footer img {
   margin-bottom: 10px;
+  min-width: 70px;
 }
 
 .page-footer__navigation {
@@ -1293,6 +1304,8 @@ form.reservation-form br {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;

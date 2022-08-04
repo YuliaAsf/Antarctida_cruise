@@ -170,7 +170,6 @@
 }
 
 .page-header__navigation {
-
   @media (max-width: $vp-767) {
     box-shadow: 0 4px 4px $color-black-muted;
     background-color: $color-default-white;
@@ -199,3 +198,6 @@
   display: none;
 }
 
+.page-header__link {
+  align-self: flex-start;
+}
