@@ -764,8 +764,8 @@ video {
 
 .description h2 {
   margin: 0;
-  margin-bottom: 2vw;
-  padding-top: 4.2vw;
+  margin-bottom: 25px;
+  padding-top: 58px;
   font-size: 28px;
   line-height: 36px;
   font-weight: 600;
@@ -814,13 +814,14 @@ video {
   display: grid;
   -ms-grid-columns: 31% 31% 31%;
   grid-template-columns: 31% 31% 31%;
-  gap: 3vw;
+  gap: 40px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .advantages__item {
+  min-width: 210px;
   max-width: 360px;
   padding: 80px 30px 25px 30px;
   -webkit-box-sizing: border-box;
