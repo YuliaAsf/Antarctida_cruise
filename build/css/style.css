@@ -1362,6 +1362,15 @@ form.reservation-form br {
   fill: #ffaa00;
 }
 
+.overlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1528,6 +1537,7 @@ form.reservation-form br {
   }
 
   .advantages__item {
+    min-width: 206px;
     padding: 70px 12px 20px 21px;
   }
 
@@ -1814,14 +1824,7 @@ form.reservation-form br {
   }
 
   .page-header__menu-closed nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0;
-    -webkit-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    display: none;
   }
 
   .page-header__menu-closed button {
@@ -1887,7 +1890,8 @@ form.reservation-form br {
   .page-header__navigation ul {
     padding: 0;
     overflow: scroll;
-    height: calc(100vh - 60px);
+    min-height: 398px;
+    max-height: calc(100vh - 60px);
   }
 
   .page-header__navigation a {

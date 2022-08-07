@@ -62,6 +62,7 @@
   @include background;
 
   @media (max-width: $vp-1023) {
+    min-width: 206px;
     padding: 70px 12px 20px 21px;
   }
 
