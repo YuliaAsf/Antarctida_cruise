@@ -1175,6 +1175,7 @@ form.reservation-form br {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  padding: 20px;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -1185,6 +1186,7 @@ form.reservation-form br {
 .catalog__block--picture h3 {
   position: absolute;
   left: 30px;
+  right: 30px;
   bottom: 22px;
 }
 
@@ -1222,6 +1224,7 @@ form.reservation-form br {
   line-height: 20px;
   padding: 28px 25px;
   padding-bottom: 35px;
+  padding-right: 20px;
   color: #f9fbfd;
   background-color: #011c40;
 }
@@ -1238,10 +1241,6 @@ form.reservation-form br {
 .catalog__block--information span {
   display: block;
   margin-bottom: 12px;
-}
-
-.catalog__block--information span:last-of-type {
-  margin-bottom: 0;
 }
 
 .catalog__block--information a {
