@@ -1890,8 +1890,7 @@ form.reservation-form br {
   .page-header__navigation ul {
     padding: 0;
     overflow: scroll;
-    min-height: 398px;
-    max-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
   }
 
   .page-header__navigation a {
