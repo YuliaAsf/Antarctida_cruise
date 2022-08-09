@@ -764,7 +764,7 @@ video {
 
 .description h2 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding-top: 58px;
   font-size: 28px;
   line-height: 36px;
@@ -801,6 +801,10 @@ video {
   background-position: center center;
 }
 
+.advantages__wrapper {
+  padding: 120px 103px;
+}
+
 .advantages h2 {
   margin: 0;
   margin-bottom: 57px;
@@ -821,7 +825,6 @@ video {
 }
 
 .advantages__item {
-  min-width: 210px;
   max-width: 360px;
   padding: 80px 30px 25px 30px;
   -webkit-box-sizing: border-box;
@@ -1538,7 +1541,7 @@ form.reservation-form br {
 
   .advantages__item {
     min-width: 206px;
-    padding: 70px 12px 20px 21px;
+    padding: 70px 15px 20px 21px;
   }
 
   .advantages__item--ship {
